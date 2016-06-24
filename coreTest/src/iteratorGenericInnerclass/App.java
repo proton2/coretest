@@ -5,7 +5,10 @@ import java.util.Iterator;
 public class App {
 
 	public static void main(String[] args) {
-
+		testIterator();
+	}
+	
+	public static void testIterator(){
 		Integer[] arr = new Integer[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
 		MyCollection <Integer> collection = new MyCollection<>(arr);
 		
@@ -14,7 +17,6 @@ public class App {
 			Integer v = (Integer) forward.next();
 			System.out.print(v.intValue() + " ");
 		}
-		
 		System.out.println(" ");
 		
 		Iterator <Integer> backward = collection.getBackward();
@@ -22,7 +24,6 @@ public class App {
 			Integer v = (Integer) backward.next();
 			System.out.print(v.intValue() + " ");
 		}
-		
 		System.out.println(" ");
 		
 		Iterator <Integer> backtwo = collection.getTwoBackward();
