@@ -2,7 +2,7 @@ package Threads;
 
 public class App {
 	public static void main(String[] args) {
-		DeadLock01 t = new DeadLock01();
+		ProducerConsumer t = new ProducerConsumer();
 		t.execute();
 	}
 }
